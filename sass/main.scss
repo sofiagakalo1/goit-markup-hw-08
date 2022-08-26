@@ -1,0 +1,17 @@
+@import './base/normalize';
+@import './utils/variables';
+@import './base/reset';
+@import './components/_common.scss/body';
+@import './components/container';
+@import './components/visually-hidden';
+@import './components/section';
+@import './components/logo';
+@import './layout/header';
+@import './layout/preview';
+@import './layout/benefits';
+@import './layout/tasks';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';
+@import './layout/modal-window';

@@ -1,0 +1,32 @@
+.clients__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-black);
+}
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+
+  transition: fill var(--animation), border-color var(--animation);
+  &:hover,
+  &:focus {
+    fill: var(--brand-blue);
+    border-color: var(--brand-blue);
+  }
+}

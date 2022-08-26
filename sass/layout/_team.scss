@@ -1,0 +1,69 @@
+.team {
+  background: #f5f4fa;
+}
+.team__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-black);
+}
+.team__list {
+  display: flex;
+  column-gap: 30px;
+}
+.team__item {
+  width: calc((100% - 30px) / 4);
+
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+.card {
+  padding: 30px;
+}
+.card__name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-black);
+}
+.card__text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-gray);
+}
+.card__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  fill: var(--icon-color);
+
+  transition: background-color var(--animation), fill var(--animation);
+  &:hover,
+  &:focus {
+    background-color: var(--brand-blue);
+    fill: var(--brand-white);
+  }
+}
