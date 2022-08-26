@@ -1,3 +1,9 @@
+.tasks{
+  display: none;
+  @include desktop{
+    display: contents;
+  }
+}
 .tasks__title {
   margin-bottom: 50px;
 
