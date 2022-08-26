@@ -7,8 +7,9 @@
   align-items: center;
 }
 .navigation__list {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  display: none;
 }
 .navigation__item:not(:last-child) {
   margin-right: 50px;
@@ -72,4 +73,44 @@
 .mail-icon {
   fill: currentColor;
   margin-right: 10px;
+}
+.mob-menu {
+}
+.is-hidden {
+}
+.container {
+}
+.mob-menu-top {
+}
+.menu-close {
+}
+.mob-menu-nav {
+}
+.mob-menu-list {
+}
+.list {
+}
+.mob-menu-item {
+}
+.mob-menu-link {
+}
+.link {
+}
+.mob-menu-bottom {
+}
+.connect {
+}
+.mob-connect {
+}
+.mob-connect-tel {
+}
+.mob-connect-btn {
+}
+.btn {
+}
+.mob-soc-list {
+}
+.mob-soc-item {
+}
+.mob-soc-link {
 }

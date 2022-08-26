@@ -14,7 +14,47 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/main-bg.jpg);
+    url(../images/preview-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/preview-bg-mobile-2x.jpg);
+  }
+  @include tablet {
+    padding: 272px 111px 237px 124px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/preview-bg-tablet.jpg);
+    @include retina {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/preview-bg-tablet-2x.jpg);
+    }
+  }
+  @include desktop {
+    padding: 272px 100px 206px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/preview-bg.jpg);
+    @include retina {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/preview-bg-2x.jpg);
+    }
+  }
 }
 .preview__title {
   width: 696px;

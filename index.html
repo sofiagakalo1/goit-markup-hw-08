@@ -67,6 +67,66 @@
             </li>
           </ul>
         </div>
+        <button class="menu-open" type="button">O</button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button class="menu-close" type="button">X</button>
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="https://www.google.com/" class="mob-menu-link link"
+                    >About</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./test.html" class="mob-menu-link link"
+                    >Services and prices</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#barbers" class="mob-menu-link link">Barbers</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="https://www.google.com/" class="mob-menu-link link"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="connect mob-connect">
+              <a href="tel:+380441111111" class="mob-connect-tel link"
+                >+38 044 111 11 11</a
+              >
+              <button type="button" class="mob-connect-btn btn" data-modal-open>
+                Online-booking
+              </button>
+            </div>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mob-soc-link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mob-soc-link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -137,30 +197,48 @@
           <h2 class="tasks__title">Чим ми займаємося</h2>
           <ul class="tasks__list list">
             <li class="tasks__item">
-              <img
-                src="./images/img1.jpg"
-                alt="keyboard"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/img1.jpg"
+                  alt="keyboard"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="tasks__text">Десктопні додатки</p>
             </li>
             <li class="tasks__item">
-              <img
-                src="./images/img2.jpg"
-                alt="phone"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/img2.jpg"
+                  alt="phone"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="tasks__text">Мобільні додатки</p>
             </li>
             <li class="tasks__item">
-              <img
-                src="./images/img3.jpg"
-                alt="tablet"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/img3.jpg"
+                  alt="tablet"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="tasks__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -171,12 +249,32 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/ihor.jpg"
-                alt="worker-1"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/ihor.jpg 1x, ./images/ihor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-tablet.jpg    1x,
+                    ./images/ihor-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-mobile.jpg    1x,
+                    ./images/ihor-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/ihor.jpg"
+                  alt="worker-1"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__name">Ігор Дем'яненко</h3>
                 <p class="card__text">Product Designer</p>
@@ -213,12 +311,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/olga.jpg"
-                alt="worker-2"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-tablet.jpg    1x,
+                    ./images/olga-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-mobile.jpg    1x,
+                    ./images/olga-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/olga.jpg"
+                  alt="worker-2"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__name">Ольга Рєпіна</h3>
                 <p class="card__text">Frontend Developer</p>
@@ -255,12 +373,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/nik.jpg"
-                alt="worker-3"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/nik.jpg 1x, ./images/nik-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/nik-tablet.jpg    1x,
+                    ./images/nik-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/nik-mobile.jpg    1x,
+                    ./images/nik-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/nik.jpg"
+                  alt="worker-3"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__name">Микола Тарасов</h3>
                 <p class="card__text">Marketing</p>
@@ -297,12 +435,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/mich.jpg"
-                alt="worker-4"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/mich.jpg 1x, ./images/mich-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mich-tablet.jpg    1x,
+                    ./images/mich-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mich-mobile.jpg    1x,
+                    ./images/mich-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mich.jpg"
+                  alt="worker-4"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__name">Михайло Єрмаков</h3>
                 <p class="card__text">UI Designer</p>
