@@ -1,9 +1,8 @@
 .preview {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -18,6 +17,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include mobile{
+    max-width: 480px;
+  }
   @include retina {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -26,7 +28,7 @@
       url(../images/preview-bg-mobile-2x.jpg);
   }
   @include tablet {
-    padding: 272px 111px 237px 124px;
+    max-width: 768px;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -41,7 +43,9 @@
     }
   }
   @include desktop {
-    padding: 272px 100px 206px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -57,17 +61,22 @@
   }
 }
 .preview__title {
-  width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--brand-white);
+  @include desktop{
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    max-width: 696px;
+  }
 }
 .order__btn {
   min-width: 200px;
@@ -88,5 +97,8 @@
   &:hover,
   &:focus {
     background: var(--main-btn-hover);
+  }
+  @include desktop{
+min-width: 216px;
   }
 }

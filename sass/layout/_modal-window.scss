@@ -24,13 +24,13 @@
   top: 50%;
   left: 50%;
 
+  width: 100%;
+    height: 609px;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
-
-  width: 528px;
-  height: 581px;
 
   background: var(--brand-white);
   box-shadow: var(--box-shadow);
@@ -38,11 +38,24 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation);
+  @include mobile{
+    width: 450px;
+    height: 609px;
+  }
+  @include tablet{
+    width: 450px;
+    height: 609px;
+  }
+  @include desktop{
+    width: 528px;
+    height: 581px;
+  }
 }
 .close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 0;
 
   display: flex;
   justify-content: center;
@@ -148,7 +161,7 @@
 }
 .checkbox {
   position: relative;
-  left: 12px;
+  // left: 12px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -157,11 +170,17 @@
 }
 .checkbox__label {
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14/12);
   letter-spacing: 0.03em;
   color: var(--brand-gray);
   cursor: pointer;
+  margin-left: 25px;
+  @include desktop{
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    margin-left: 8px;
+  }
 }
 .checkbox__input {
   position: absolute;

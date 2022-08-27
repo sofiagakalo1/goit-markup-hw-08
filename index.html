@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
-        <a class="logo" href="/" aria-label="WebStudio">
+        <a class="logo header-logo" href="/" aria-label="WebStudio">
           <span class="logo--blue">Web</span
           ><span class="logo--black">Studio</span></a
         >
@@ -67,16 +67,62 @@
             </li>
           </ul>
         </div>
-    </header> -->
+        <button class="menu-open" type="button">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- -----mobile-menu----->
+      <div class="mob-menu is-hidden">
+        <div class="container mob-menu-container">
+        <button class="menu-close" type="button">
+          <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close-mobile">
+          </use>
+          </svg>
+        </button>
+          <nav class="mob-menu__nav">
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="mob-menu-inner">
+        <ul class="mob-menu-contact list">
+          <li class="mob-menu-contact__item">
+            <a class="mob-menu-contact__tel link" href="tel:+380961111111"
+              >+38 096 111 11 11</a>
+          </li>
+          <li class="mob-menu-contact__item">
+            <a class="mob-menu-contact__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul> 
+        <ul class="mob-social-networks list">
+          <li class="mob-social-networks__item"><a class="mob-social-networks__link link" href="">Instagram</a></li>
+          <li class="mob-social-networks__item"><a class="mob-social-networks__link link" href="">Twitter</a></li>
+          <li class="mob-social-networks__item"><a class="mob-social-networks__link link" href="">Facebook</a></li>
+          <li class="mob-social-networks__item"><a class="mob-social-networks__link link" href="">LinkedIn</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+    </header>
     <main>
-      <!-- <section class="preview section">
+      <section class="preview section">
         <div class="container preview-container">
           <h1 class="preview__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="order__btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> --> -->
+      </section>
       <section class="benefits section">
         <div class="container benefits-container">
           <h2 class="visually-hidden">Переваги</h2>
@@ -207,11 +253,7 @@
                   "
                   media="(max-width: 767px)"
                 />
-                <img
-                  src="./images/ihor.jpg"
-                  alt="worker-1"
-                  width="270"
-                />
+                <img src="./images/ihor.jpg" alt="worker-1" width="270" />
               </picture>
               <div class="card">
                 <h3 class="card__name">Ігор Дем'яненко</h3>
@@ -650,5 +692,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

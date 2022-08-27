@@ -1,7 +1,8 @@
 .tasks{
   display: none;
   @include desktop{
-    display: contents;
+    display: flex;
+    padding-top: 0;
   }
 }
 .tasks__title {

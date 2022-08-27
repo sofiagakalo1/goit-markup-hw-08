@@ -1,8 +1,14 @@
 .branches__list {
   display: flex;
-  justify-content: center;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 50px;
+  @include tablet{
+    justify-content: center;
+  }
+  @include desktop {
+    flex-direction: row;
+  }
 }
 .branches__btn {
   padding: 6px 22px;
@@ -37,7 +43,13 @@
   gap: 30px;
 }
 .examples__item {
-  width: calc((100% - 60px) / 3);
+  height: 404px;
+  @include tablet{
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop{
+    width: calc((100% - 60px) / 3);
+  }
 }
 .card-overlay {
   position: relative;
@@ -73,32 +85,32 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-      & .card-overlay__text {
-  opacity: 1;
-  bottom: 100%;
-  transform: translateY(0);
+    & .card-overlay__text {
+      opacity: 1;
+      bottom: 100%;
+      transform: translateY(0);
+    }
   }
-}
-.examples__description {
-  padding: 20px 24px;
+  .examples__description {
+    padding: 20px 24px;
 
-  background: var(--brand-white);
-  border: 1px solid #eeeeee;
-  border-top: 0;
-}
-.examples__text {
-  margin-bottom: 4px;
+    background: var(--brand-white);
+    border: 1px solid #eeeeee;
+    border-top: 0;
+  }
+  .examples__text {
+    margin-bottom: 4px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  color: var(--brand-black);
-}
-.examples__name {
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
-  color: var(--brand-gray);
-} 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--brand-black);
+  }
+  .examples__name {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--brand-gray);
+  }
 }
