@@ -130,8 +130,8 @@ line-height: calc(14/12);
 }
 .mob-menu.is-hidden{
   transform: translateX(0);
-  top: 0;
   transition: transform var(--animation);
+  top: 0;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -156,6 +156,7 @@ line-height: calc(14/12);
     fill: var(--brand-blue);
     transition: fill var(--animation);
   }
+}
 .mob-menu__list{
   display: flex;
   flex-direction: column;
@@ -168,7 +169,11 @@ line-height: calc(47/40);
 letter-spacing: 0.02em;
 color: #212121;
 transition: color var(--animation);
-&:focus{
+&:focus,
+&:hover{
+  color: var(--brand-blue);
+}
+&--cur{
   color: var(--brand-blue);
 }
 }
@@ -208,4 +213,4 @@ border-right: 1px solid rgba(33, 33, 33, 0.2);
   color: #2196F3;
   
 }
-}
+
