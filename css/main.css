@@ -341,12 +341,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .navigation__item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
 .navigation__link {
   font-weight: 500;
   font-size: 14px;
@@ -457,6 +451,8 @@ body {
   top: 0;
   padding-top: 48px;
   padding-bottom: 48px;
+  transform: translateX(0);
+  transition: transform var(--animation);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -465,12 +461,10 @@ body {
 }
 
 .mob-menu.is-hidden {
-  transform: translateX(0);
+  transform: translateX(100%);
   transition: transform var(--animation);
   top: 0;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+  pointer-events: initial;
 }
 
 .mob-menu-container {
@@ -768,7 +762,7 @@ body {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
@@ -780,6 +774,7 @@ body {
   .team__title {
     font-size: 36px;
     line-height: 1.1666666667;
+    margin-bottom: 50px;
   }
 }
 
@@ -1121,16 +1116,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .branches__list {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .branches__list {
     flex-direction: row;
+    margin-bottom: 50px;
   }
 }
 
@@ -1162,9 +1159,6 @@ body {
   gap: 30px;
 }
 
-.examples__item {
-  height: 404px;
-}
 @media screen and (min-width: 768px) {
   .examples__item {
     width: calc((100% - 30px) / 2);
@@ -1202,7 +1196,9 @@ body {
 }
 
 .examples__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--animation);
 }
 .examples__link:hover, .examples__link:focus {
@@ -1214,6 +1210,7 @@ body {
   transform: translateY(0);
 }
 .examples__link .examples__description {
+  flex-grow: 1;
   padding: 20px 24px;
   background: var(--brand-white);
   border: 1px solid #eeeeee;

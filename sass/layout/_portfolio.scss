@@ -2,12 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   @include tablet{
     justify-content: center;
+    margin-bottom: 30px;
   }
   @include desktop {
     flex-direction: row;
+    margin-bottom: 50px;
   }
 }
 .branches__btn {
@@ -43,7 +45,6 @@
   gap: 30px;
 }
 .examples__item {
-  height: 404px;
   @include tablet{
     width: calc((100% - 30px) / 2);
   }
@@ -79,7 +80,9 @@
   transition: transform var(--animation), opacity var(--animation);
 }
 .examples__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--animation);
   &:hover,
   &:focus {
@@ -92,6 +95,7 @@
     }
   }
   .examples__description {
+    flex-grow: 1;
     padding: 20px 24px;
 
     background: var(--brand-white);
